@@ -1,0 +1,165 @@
+/*
+	Name: main.css
+	Date: May 2010
+	Description: mdmnky main css file.
+	Version: 1.0
+	Author: bala peterson
+	Autor URI: http://mdmnky.com
+*/
+
+/* Imports */
+@import url("aux.css");
+
+/***** Global *****/
+/* Body */
+	body {
+		background-color: #fff;
+		color: #333;
+		font-family: Arial;
+		font-size: 12px;
+	}
+
+/* Headings */
+
+
+h2, h3, h4, h5, h6 {
+}
+	
+/* Anchors */
+a {outline: 0; cursor:pointer; color:#333;}
+a img {border: 0px; text-decoration: none;}
+a:link, a:visited {
+	text-decoration: none;
+}
+a:hover, a:active{
+	text-shadow: 1px 1px 1px #ccc;
+	text-decoration: underline;
+}
+a.cover-img:hover, a.cover-img:active {text-shadow: 0px 0px 0px #ccc;
+text-decoration: none;}
+a.other_side, #footer a{border: 1px solid #F4ED2A;background-color:#F4ED2A;padding:0 5px;}
+#banner a:hover, #banner a:active {
+	text-shadow: 1px 1px 1px #ccc;
+	   -moz-box-shadow: 0px 0px 2px #acacac;
+	   -webkit-box-shadow: 0px 0px 2px #acacac;
+}
+	
+/* Paragraphs */
+p {padding:5px 0px;line-height:15px;clear:both;float:none;}
+* p:last-child {margin-bottom: 0;}
+
+strong, b {font-weight: bold;}
+
+#deus-ex .description strong{
+	display:block;
+	float:left;
+	height:46px;
+	padding-right:5px;color:#999;font-size:9px;
+}
+#deus-ex .description br{clear:both;float:none;}
+
+em, i {font-style: italic;}
+
+::-moz-selection {background: #F6CF74; color: #fff;}
+::selection {background: #F6CF74; color: #fff;}
+
+/* Lists */
+ul, ol {
+	list-style: none;
+}
+
+/* Quotes */
+blockquote {font-style: italic;}
+
+	
+/* HTML5 tags */
+header, section, footer,
+aside, nav, article, figure {
+	display: block;
+}
+.empty{display:none;}
+hr{display:none;}
+/***** Layout *****/
+div#wrapper{width:1024px;/*width:968px;*/height:705px;margin:0 auto;/*border: 1px solid red;*/overflow:hidden;}
+
+#banner{background-color:transparent;height:100px;position:relative;margin:0 auto;margin-top:15px;width:964px;}
+	#banner div#copyright{
+		position:relative;left:1px;
+		font-size:10px;width:155px;height:100px;text-indent:-9999em;
+	}
+	#banner div#social{
+		height:33px;
+		position:absolute;right:1px;top:0px;
+	}
+	#banner a{position:relative;top:10px;margin-right:15px;}
+	#banner #social a {
+		
+		height:33px;display:block;float:left;text-indent:-9999em;
+	}
+	#banner #social a.tipthis{width:30px;height:34px;}
+	#banner #social a#fb{width:10px;background-position:0 0;}
+	#banner #social a#rss{width:16px;background-position:-26px 0;}
+	#banner #social a#tw{width:26px;background-position:-53px 0;margin-right:0px;}
+	
+	
+	.next_prev_arrow_link{
+		background-color:transparent;
+		display:block;
+		height:454px;
+		position:absolute;
+		top:32px;
+		width:30px;
+	}
+	#banner #social a{background:url("../images/icons.jpg") no-repeat scroll 0 0 #fff;}
+	#banner #social a.tipthis{background:url("../images/icons.jpg") no-repeat scroll -79px 9px transparent;}
+	#home_link{background:url("../images/icons.jpg") no-repeat scroll -36px -31px transparent;display:block;width:24px;height:33px;float:left;}
+	#beta_link{background:url("../images/icons.jpg") no-repeat scroll 0px -31px transparent;display:block;width:32px;height:32px;float:left;}
+	a.prev_arrow_link {background:url("../images/icons.jpg") no-repeat scroll -115px 167px transparent;left: -450px;}
+	a.prev_arrow_link:hover{background:url("../images/icons.jpg") no-repeat scroll -145px 167px #FFFFFF;}
+	a.next_arrow_link {background:url("../images/icons.jpg") no-repeat scroll -175px 167px transparent;right: -30px;}
+	a.next_arrow_link:hover{background:url("../images/icons.jpg") no-repeat scroll -205px 167px #FFFFFF;}
+	
+
+/*
+	nav
+*****************/
+#copyright span.title{font-size: 12px;}
+span.title{font-weight:bold;}
+span.navigate{margin-left:15px;}
+.albums{position:relative;}
+
+.series_nav{width:420px;float:left; background-color:#fff;position:absolute;top:20px;z-index:4;display:none;padding-left:30px;}
+.ser_page{background-color:#F8F8F8;/*border:1px solid red;*/height:454px;margin:30px;width:960px;}
+.cover-img{margin:30px 0 0 30px;display:block;cursor:pointer;}
+* html .series_nav{top:-20px;}
+.print .nav{height:12px;width:544px;position:relative;float:none;clear:both;left:420px;background-color:#fff;padding:10px 0;z-index:9999;margin-left:30px;/*border: 1px solid red;*/}
+
+.print .nav span{font-size:11px;line-height:12px;}
+	.print .nav span.title{padding-left:10px;}
+	.print .nav span.buy{text-transform:uppercase;font-weight:bold;position:absolute;right:0px;}
+	.print .bottom span.buy{text-transform:inherit;font-weight:normal;}
+	.print .top .navigate{text-indent:-99999em;}
+.content{width:9999999em;height:520px;margin:10px auto;/*border: 1px solid red;*/background-color:#fff;float:none;clear:both;}
+	.content .print{width:1024px;/*width:968px;*/height:518px;float:left; margin:0 0px;position:relative;/*background-color:yellow;*/}
+	.content .print img{display:none;}
+	.content .description{margin-left:30px;width:419px;height:454px;float:left;border-right:1px dashed #ccc;background-color:#f8f8f8;cover}
+		.content .description div.holder{height:425px; width:380px;padding:0px 0px 0 15px;overflow:hidden;opacity:0;}
+			.content .description div.holder img{display:block;}
+	.content .artwork{width:544px;height:454px;float:left;position:relative;background-color:#f8f8f8;overflow-x:hidden;overflow-y:auto;}
+		.content .artwork img{display:block;float:none; clear:both;}
+	
+#footer{width:964px;margin:20px auto;/*border: 1px solid red;*/height:20px;position:relative;clear: both;float: none;}
+	#footer ul li{float:left;padding-right:30px;line-height:20px;}
+	#collection-cover ul li li{float:none;padding-right:0;line-height:12px;}
+	#footer span.cpyr{position:absolute;right:1px;font-size:10px;}
+	
+#about.body{font-size:15px;color:#fff;line-height:22px;padding:10px;text-align:justify;}
+	#about.body a{color:#7c7c7c;}
+
+#collection_content ul{padding: 30px 0 0 15px;}
+    #collection-cover ul ul{padding: 0px;}
+#collection-cover li{margin-right: 20px;float: left;line-height:20px;}
+    #collection-cover li li{padding: 5px 0px;}
+#collection-cover li strong{ text-transform: uppercase;}
+
+

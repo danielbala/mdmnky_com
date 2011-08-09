@@ -1,0 +1,11 @@
+this is the source for the website mdmnky.com
+
+using php for page speed optimization (gzip, encoding, caching)
+
+the site uses jtemplates (javascript templating language)
+
+JSON for data and AMAZON AWS as the image repository
+
+the guestbook WABS utilizes the facebook and twitter API's for social-ness
+
+any questions, holla at me!
